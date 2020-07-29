@@ -12,4 +12,4 @@ class: WDD 104
 class ID: l4RJWDD104
 
 
-Trained by Md. Tasfiqul Islam Ony
+Trained by Md. Tasdikul Islam Ony

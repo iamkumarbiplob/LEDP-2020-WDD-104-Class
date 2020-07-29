@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to greading System</title>
+    <link rel="icon" type="image/ico" href="../source/image/logo.ico">
+    <link rel="stylesheet" href="../source/style/css/style.css">
+    <link rel="stylesheet" href="../source/bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../source/fontawesome-5/css/all.min.css">
+    <link rel="stylesheet" href="../source/fontawesome-5/css/fontawesome.min.css">
+
+</head>
+
+<body onload=display_ct();>
+    <div class="container-fluid position-fixed zindex-tooltip text-center">
+        <div class="date_time">
+            <p>
+                <span id='ct'></span>
+            </p>
+        </div>
+    </div>
+
+    <div class="container pt-5 d-print-none">
+        <nav aria-label="breadcrumb d-print-none">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../dashboard.html">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Greading System</li>
+            </ol>
+        </nav>
+        <form name="converter_form">
+            <div class="card mx-auto" style="width: 300px;">
+                <div class="card-header text-center">
+                    <b>Letter Grade Converter</b>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" name="fname" placeholder="Enter Your Name">
+                        <input type="text" class="form-control mb-3" name="marks" minlength="1" maxlength="3"
+                            placeholder="Enter Your Marks">
+                        <br>
+                        <button type="button" class="btn btn-primary mb-4 btn-lg btn-block" onclick="convertgpa();"
+                            data-toggle="modal" data-target="#myModal">Convert</button>
+                        <button type="reset" class="btn btn-danger mb-4 btn-lg btn-block">reset</button>
+                    </div>
+                    <!-- <div class="form-group">
+                        <h5 class="card-title text-center">Output</h5>
+                        <input type="text" class="form-control mb-3" name="fname_out" readonly>
+                        <input type="text" class="form-control mb-3" name="point_out" readonly>
+                        <input type="text" class="form-control mb-3" name="gpa_out" readonly>
+                    </div> -->
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade d-print-inline" id="myModal" tabindex="-1" role="dialog" aria-labelledby="title_modal"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="title_modal">Greading System</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>
+                        <span id="output1"></span>
+                    </h3>
+                    <h4>
+                        <span id="output2"></span>
+                    </h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" onclick="window.print()"><i
+                            class="fas fa-print"></i></button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <footer id="footer" class="fixed-bottom bg-color-custom">
+        <div class="container ">
+            <div class="row pt-3">
+                <div class="col-md-3 text-white" style="font-weight: bold;">
+                    <h5>Trainer</h5>
+                    <h6>Md. Tasfiqul Islam Ony</h6>
+                    <h6>Class Name: WDD 104</h6>
+                    <h6>Batch ID: L4RJWDD104</h6>
+                </div>
+                <div class="col-md-6 py-3">
+                    <img src="../source/image/LEDP/ict_ledp_mubin.png" alt="Mubin Limited"
+                        class="img-w-500-h-100 mx-auto d-block">
+                </div>
+                <div class="col-md-3 text-white" style="font-weight: bold; text-align: right;">
+                    <h5>Developed By</h5>
+                    <h6>Biplob Kumar</h6>
+                    <h6>Mobile: +8801787-829450</h6>
+                    <h6>Class Name: WDD 104</h6>
+                    <h6>Batch ID: L4RJWDD104</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../source/style/js/main.js"></script>
+    <script src="../source/fontawesome-5/js/all.min.js"></script>
+    <script src="../source/fontawesome-5/js/fontawesome.min.js"></script>
+    <script src="../source/jquery/jquery-3.5.0.min.js"></script>
+    <script src="../source/popper/popper.min.js"></script>
+    <script src="../source/bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+
+</html>

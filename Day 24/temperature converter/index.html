@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" type="image/ico" href="../../source/image/logo.ico">
+    <link rel="stylesheet" href="../../source/bootstrap-4/css/bootstrap.min.css">
+    <script>
+        alert("Wellcome to Temperature Converter");
+    </script>
+</head>
+
+<body onload=display_ct();>
+    <div class="container-fluid position-fixed zindex-tooltip">
+        <div class="date_time">
+            <p>
+                <span id='ct'></span>
+            </p>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../dashboard.html">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Temperature Converter</li>
+            </ol>
+        </nav>
+        <form name="converter_form">
+            <div class="card mx-auto" style="width: 300px;">
+                <div class="card-header text-center">
+                    <b>Temperature Converter</b>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" name="input_value" placeholder="Enter Temperature">
+                    </div>
+                    <!-- button  -->
+                    <button type="button" class="btn btn-primary mb-4 btn-lg btn-block" onclick="converttof_f();"
+                        data-toggle="modal" data-target="#myModal">
+                        Celcius to Fahrenheight
+                    </button>
+                    <button type="button" class="btn btn-primary mb-4 btn-lg btn-block" onclick="converttof_c();"
+                        data-toggle="modal" data-target="#myModal">
+                        Fahrenheight to Celcius
+                    </button>
+                    <button type="reset" class="btn btn-danger mb-4 btn-lg btn-block">reset</button>
+                </div>
+            </div>
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="title_modal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="title_modal">Temperature Converter</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>
+                            <span id="celcius"></span>
+                        </h3>
+                        <h3>
+                            <span id="fahrenheight"></span>
+                        </h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/main.js"></script> <!-- -->
+    <script src="../../source/jquery/jquery-3.5.0.min.js"></script>
+    <script src="../../source/bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+
+</html>

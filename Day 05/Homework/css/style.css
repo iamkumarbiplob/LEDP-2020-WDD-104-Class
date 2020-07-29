@@ -1,0 +1,203 @@
+*{margin: 0; padding: 0; outline: 0;}
+body {
+	font-family: Arial;
+	width: 1300px;
+	margin: auto;
+}
+.header{
+    background-color: #f700ff;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+}
+.header img{
+	float: left;
+	height: 70px;
+    width: 70px;
+    padding-left: 15px;
+}
+.header p {
+	font-size: 27px;
+	font-weight: bold;
+	padding-top: 25px;
+    color: #fff;
+}
+.header p i{
+	margin-top: 20px;
+    font-family: 'Gill Sans';
+}
+/* ------------------------------------Nevigation--------------------------------- */
+.nevigation {
+	padding: 5px;
+	background-color: #9c33b6;
+	height: 40px;
+}
+.nevigation ul{
+    margin: auto;
+    margin-left: 25%;
+	padding: 0px;
+    list-style: none;
+}
+.nevigation ul li{
+	float: left;
+	width: 200px;
+	height: 40px;
+	background-color: #5dec4a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 2px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+}
+.active{
+    background-color: green;
+    border-radius: 12px;
+}
+.nevigation ul li a{
+	text-decoration: none;
+	color: #000000;
+	display: block;
+}
+.nevigation ul li:hover{
+	background-color: green;
+}
+/* -------------------------------------Home-------------------------------------- */
+
+.main-body{
+	width: 100%;
+	/* background-color: #f700ff; */
+}
+.main-body h2{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.left-side{
+	float: left;
+	width: 49%;
+	margin-bottom: 30px;
+}
+.left-side p{
+	text-align: justify;
+}
+.right-side{
+	float: right;
+	width: 49%;
+	margin-bottom: 30px;
+}
+
+.service ul {
+	list-style: none;
+	margin-left: 20px;
+  }
+  
+  .service ul li:before {
+	content: '✓ ';
+  }
+  .review{
+	  background-color: #f700ff;
+  }
+  .review .panel{
+	  margin: auto;
+	  width: 80%;
+	  /* font-size: 30px; */
+  }
+  .review .panel .customer-pic{
+	  width: 30%;
+	  float: left;
+  }
+  .review .panel .customer-pic img{
+	width: 100px;
+	height: 100px;
+	margin-top: 20px;
+	border-bottom: 2px solid cornflowerblue;
+	border-block-end-color: #dff706;
+	/* background: linear-gradient(to right, #a517ba, #5f1782); */
+  }
+  .review .panel .customer-text{
+	  width: 70%;
+  }
+  .review .panel .customer-text .review-text{
+	  font-size: 50px;
+  }
+  .review .panel .customer-text font{
+	  font-size: 60px;
+  }
+ /* --------------------------about---------------------------- */
+.about-body{
+	padding-left: 60px;
+	width: 100%;
+}
+.about-body .about-pic{
+	margin: auto;
+}
+.about-body .about-pic img{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #f700ff;
+	border-radius: 150px;
+	padding: 1px;
+}
+.about-desc{
+	font-size: 20px;
+	margin-top: 100px;
+}
+.about-desc ul{
+	list-style: none;
+	margin-left: 20px;
+}
+.about-desc ul li:before {
+	content: '✓ ';
+  }
+
+  /* --------------------------------contact ------------------------------- */
+  .contact-detail{
+	  margin-top: 50px;
+  }
+  .contact-data .left-p img{
+	  width: 300px;
+	  height: 300px;
+	  border-radius: 80px;
+	  float: left;
+  }
+  .right-p{
+	  float: left;
+	  margin-top: 100px;
+	  margin-left: 200px;
+  }
+  .contact-data .right-p a{
+	text-decoration: none;
+	color: #000000;
+  }
+  .contact-data .right-p a:active{
+	  color: #2bff00;
+  }
+  .contact-data .right-p a:hover{
+	  color: blue;
+  }
+  .contact-data .right-p a:visited{
+	  color: blueviolet;
+  }
+  .contact-data .right-p form h2{
+	  margin-top: 50px;
+	  color: lightpink;
+  }
+  .contact-data .right-p form input, .contact-data .right-p form textarea{
+	width: 300px;
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+  }
+  .contact-data .right-p form button{
+	  font-size: 18px;
+	  margin-top: 10px;
+	  padding: 5px 10px;
+	  border-radius: 5px;
+	  font-weight: bolder;
+  }
+  .contact-data .right-p form button:hover{
+	  color: ivory;
+	  background-color: lightcoral;
+  }

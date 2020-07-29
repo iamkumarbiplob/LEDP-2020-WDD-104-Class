@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+@media print {
+    body {
+        width: 595px;
+        height: 842px;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 10%;
+}
+
+.img-w-500-h-100 {
+    width: 500px;
+    height: 100px;
+}
+
+.img-w-200-h-100 {
+    width: 200px;
+    height: 100px;
+}
+
+.img-w-200-h-200 {
+    width: 200px;
+    height: 200px;
+}
+
+.index-image-left-top {
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+}
+
+.index-image-right-top {
+    top: 5px;
+    float: right;
+    right: 10px;
+    z-index: -1;
+}
+
+.index-image-bottom-left {
+    bottom: 10px;
+    left: 15px;
+    z-index: -1;
+    /* background-color: aliceblue; */
+}
+
+.index-image-bottom-right {
+    bottom: 10px;
+    right: 10px;
+    /* z-index: -1; */
+}
+
+.container-fluid .image-background {
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: -10;
+}
+
+.bg-color-custom {
+    background-color: #196565 !important;
+}
+
+/* ---------------------------Calculator ------------------------------- */
+
+.calc-button-input {
+    background: lightGray;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 7px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.calc-button-input:active {
+    background-color: #4b0541;
+    box-shadow: 0 5px #f18080;
+    transform: translateY(4px);
+}
+
+.calc-button-input:hover {
+    background-color: #eb22bf;
+    color: white;
+}
+
+.calc-text-input {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 10px;
+}

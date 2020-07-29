@@ -1,0 +1,63 @@
+/* #students{
+    font-family: Arial;
+    border-collapse: collapse;
+    width: 100%;
+}
+#students th, #students td{
+    border: 1px solid darkcyan;
+    padding: 8px;
+}
+#students tr:nth-child(even){background-color: #f5d2f3;}
+#students tr:hover{background-color: lightblue;}
+
+#students th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: tomato;
+    color: wheat;
+} */
+/* -------------------------------new table---------------- */
+/* .title{
+    text-align: center;
+    background-color: #ee82ee;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.with-link{
+    font-family: Arial;
+    border-collapse: collapse;
+    width: 100%;
+}
+.with-link th, #students td{
+    border: 1px solid darkcyan;
+    padding: 8px;
+}
+.with-link tr:nth-child(even){background-color: #fa94f5;}
+.with-link tr:nth-child(odd){background-color: #da60ff;}
+.with-link tr:hover{background-color: #f7e0f5;}
+
+.with-link th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: tomato;
+    color: wheat;
+}
+.with-link td a{
+    text-decoration: none;
+    color: #000;
+} */
+
+.btn{
+    background-color: lightblue;
+    color: tomato;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}

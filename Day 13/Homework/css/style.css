@@ -1,0 +1,8 @@
+.custom-search{
+    background-image: url("../../../source/fontawesome-5/svgs/solid/search.svg");
+    background-color: white;
+    background-position: right center; 
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-right: 35px;;
+}

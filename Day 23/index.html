@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="../source/bootstrap-4/css/bootstrap.min.css">
+    <script>
+        alert("Wellcome to Temperature Converter");
+    </script>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <form name="converter_form_c_f">
+            <div class="card mx-auto" style="width: 300px;">
+                <div class="card-header text-center">
+                    <b>Temperature Converter (C to F)</b>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" name="celcious"
+                            placeholder="Enter Temperature in celcious">
+                        <br>
+                        <button type="button" class="btn btn-primary mb-4 btn-lg btn-block"
+                            onclick="converttof_f();">Convert</button>
+                        <button type="reset" class="btn btn-danger mb-4 btn-lg btn-block">reset</button>
+                    </div>
+                    <div class="form-group">
+                        <h5 class="card-title text-center">Output</h5>
+                        <input type="text" class="form-control mb-3" name="fahrenheight" readonly>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br><hr><br>
+        <form name="converter_form_f_c">
+            <div class="card mx-auto" style="width: 300px;">
+                <div class="card-header text-center">
+                    <b>Temperature Converter (F to C)</b>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" name="fahrenheight"
+                            placeholder="Enter Temperature in celcious">
+                        <br>
+                        <button type="button" class="btn btn-primary mb-4 btn-lg btn-block"
+                            onclick="converttof_c();">Convert</button>
+                        <button type="reset" class="btn btn-danger mb-4 btn-lg btn-block">reset</button>
+                    </div>
+                    <div class="form-group">
+                        <h5 class="card-title text-center">Output</h5>
+                        <input type="text" class="form-control mb-3" name="celcious" readonly>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script> <!-- -->
+    <script src="../source/jquery/jquery-3.5.0.min.js"></script>
+    <script src="../source/bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+
+</html>

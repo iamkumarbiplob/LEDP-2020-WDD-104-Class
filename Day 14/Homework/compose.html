@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../source/bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../source/fontawesome-5/css/all.min.css">
+    <link rel="stylesheet" href="../../source/fontawesome-5/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../source/style/css/util.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <div class="row fs-20">
+                    <div class="col-md-6">New Message</div>
+                    <div class="col-md-6 text-right">
+                        <i class="fas fa-minus mr-3"></i>
+                        <i class="fas fa-compress-alt mr-3"></i>
+                        <i class="fas fa-times mr-3"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-row">
+                        <input class="form-control border-top-0 border-right-0 border-left-0" type="email"
+                            placeholder="Recipients">
+                    </div>
+                    <div class="form-row">
+                        <input class="form-control border-top-0 border-right-0 border-left-0" type="text"
+                            placeholder="Subject">
+                    </div>
+                    <div class="form-row">
+                        <textarea rows="10" class="form-control border-top-0 border-right-0 border-left-0"
+                            placeholder="message"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <i class="fas fa-undo mr-3"></i>
+                            <i class="fas fa-redo mr-3"></i>
+                            <!-- -----------------------------language----------------------------------------- -->
+                            <div class="btn-group mr-3">
+                                <button type="button" class="dropdown-toggle" id="language" data-toggle="dropdown">
+                                    Sans Serif
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="language">
+                                    <a class="dropdown-item" href="#">Sans Serif</a>
+                                    <a class="dropdown-item" href="#">Serif</a>
+                                    <a class="dropdown-item" href="#">Fixed Width</a>
+                                    <a class="dropdown-item" href="#">Wide</a>
+                                    <a class="dropdown-item" href="#"> Narrow</a>
+                                    <a class="dropdown-item" href="#"> Comic Sans MS</a>
+                                    <a class="dropdown-item" href="#"> Garamond</a>
+                                    <a class="dropdown-item" href="#"> Georgia</a>
+                                </div>
+                            </div>
+                            <!-- -----------------------------Text Height----------------------------------------- -->
+
+                            <div class="btn-group mr-3">
+                                <button type="button" class="dropdown-toggle" id="language" data-toggle="dropdown">
+                                    <i class="fas fa-text-height"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="language">
+                                    <a class="dropdown-item fs-14" href="#">Small</a>
+                                    <a class="dropdown-item fs-18" href="#">Normal</a>
+                                    <a class="dropdown-item fs-22" href="#">Large</a>
+                                    <a class="dropdown-item fs-25" href="#">Huge</a>
+                                </div>
+                            </div>
+                            <i class="fas fa-bold mr-3"></i>
+                            <i class="fas fa-italic mr-3"></i>
+                            <i class="fas fa-underline mr-3"></i>
+                            <div class="btn-group mr-3">
+                                <button type="button" class="dropdown-toggle" id="language" data-toggle="dropdown">
+                                    <i class="fab fa-autoprefixer"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="language">
+                                    <a class="dropdown-item" href="#">Color</a>
+                                </div>
+                            </div>
+                            <div class="btn-group mr-3">
+                                <button type="button" class="dropdown-toggle" id="language" data-toggle="dropdown">
+                                    <i class="fas fa-align-left"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="language">
+                                    <a class="dropdown-item" href="#"><i class="fas fa-align-justify"></i></a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-align-center"></i></a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-align-right"></i></a>
+                                </div>
+                            </div>
+                            <i class="fas fa-list-ol mr-3"></i>
+                            <i class="fas fa-list-ul mr-3"></i>
+                            <i class="fas fa-list mr-3"></i>
+                            <i class="fas fa-indent mr-3"></i>
+                            <i class="fas fa-indent mr-3"></i>
+                            <i class="fas fa-quote-right mr-3"></i>
+                            <i class="fas fa-strikethrough mr-3"></i>
+                            <i class="fas fa-remove-format mr-3"></i>
+                        </div>
+                    </div>
+                    <div class="row fs-25">
+                        <div class="col-md-1">
+                            
+                            <!-- -----------------------------Send----------------------------------------- -->
+                            <div class="btn-group mt-3">
+                                <button type="button" class="btn btn-primary">Send</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Schedule send</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 pt-3">
+                            <i class="fab fa-autoprefixer mr-3"></i>
+                            <input type="file" class="custom-file-input" id="customFile" hidden>
+                            <label for="customFile"><i class="fas fa-paperclip mr-3"></i></label>
+                            <i class="far fa-laugh-wink mr-3"></i>
+                            <i class="fab fa-google-drive mr-3"></i>
+                            <i class="fas fa-image mr-3"></i>
+                            <i class="fas fa-lock mr-3"></i>
+                            <i class="fas fa-pen-alt mr-3"></i>
+                        </div>
+                        <div class="col-md-4 text-right pt-3">
+                            <i class="fas fa-ellipsis-v mr-3"></i>
+                            <i class="fas fa-trash mr-3"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../../source/jquery/jquery-3.5.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../../source/bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+*{margin: 0; padding: 0; outline: 0;}
+body{
+    background: linear-gradient(white, #D3D8E8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+/* -----------------------------------Header----------------------------- */
+.header{
+    margin: auto;
+    height: 70px;
+    width: 1560px;
+    background-color: #3B5998;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.header .header-left{
+    width: 55%;
+    float: left;
+}
+.header .header-left img{
+    padding: 0px 0px 0px 100px;
+}
+.header .header-right{
+    width: 40%;
+    float: left;
+}
+.header .header-right form table tr td{
+    padding: 0 0 0 14px;
+}
+.header .header-right form table tr td label{
+    font-size: 12px;
+    color: #fff;
+}
+.header .header-right form table tr td input{
+    width: 150px;
+    height: 23px;
+}
+.header .header-right form table tr td input[type='submit']{
+    width: 50px;
+    height: 25px;
+    color: #fff;
+    background-color: #4267b2;
+    border: 1px solid #29487d;
+    cursor: pointer;
+    margin: 0px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.header .header-right form table tr td input[type='submit']:hover{
+    background-color: #2d4f99;
+}
+.header .header-right form table tr td a{
+    text-decoration: none;
+    color: #8CA5BB;
+    font-size: 12px;
+}
+/* ---------------------------body---------------------------------- */
+.facebook-body{
+    width: 1200px;
+    margin: auto;
+}
+.facebook-body .facebook-body-left{
+    float: left;
+    width: 55%;
+    margin-top: 50px;
+}
+.facebook-body .facebook-body-left p{
+    color: #0e385f;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 29px;
+    width: 450px;
+    word-spacing: -1px;
+}
+.facebook-body .facebook-body-right{
+    float: left;
+    width: 40%;
+    padding: 25px;
+}
+.facebook-body .facebook-body-right h1{
+    font-size: 36px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.facebook-body .facebook-body-right h3{
+    color: #1d2129;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.facebook-body .facebook-body-right .name{
+    width: 175px;
+}
+.facebook-body .facebook-body-right .border-custom{
+    font-size: 18px;
+    padding: 8px 10px;
+    color: #606770;
+    border: 1px solid #ccd0d5;
+    border-color: #bdc7d8;
+    border-radius: 5px;
+    margin: 7px;
+}
+.facebook-body .facebook-body-right .mail, .facebook-body .facebook-body-right .pass{
+    width: 385px;
+}
+.facebook-body .facebook-body-right .label-custom{
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+}
+.facebook-body .facebook-body-right .birthday{
+    font-size: 13px;
+    height: 30px;
+    padding: 5px;
+    background-color: #fff;
+    color: #1c1e21;
+    vertical-align: top;
+}
+.facebook-body .facebook-body-right .radio-input{
+    font-size: 12px;
+    background-color: #fff;
+    color: #1c1e21;
+    margin: 10px 0px;
+}
+.facebook-body .facebook-body-right .radio-label{
+    color: #1d2129;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+    vertical-align: middle;
+}
+.facebook-body .facebook-body-right .aggrement{
+    color: #777;
+    font-size: 11px;
+    width: 310px;
+    margin: 15px 0px;
+}
+.facebook-body .facebook-body-right .aggrement a{
+	color: #385898;
+	cursor: pointer;
+	text-decoration: none;
+}
+.facebook-body .facebook-body-right .aggrement a:hover{
+    text-decoration: underline;
+}
+.facebook-body .facebook-body-right .submit-button{
+    font-size: 19px;
+    font-weight: bold !important;
+    background-color: #69a74e;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+}
+.facebook-body .facebook-body-right h4{
+    font-size: 13px;
+    color: #666;
+}
+.facebook-body .facebook-body-right a{
+    text-decoration: none;
+}
+.facebook-body .facebook-body-right a:hover{
+    text-decoration: underline;
+    color: #385898;
+}
+.facebook-body .facebook-body-right .submit-button:hover{
+    background: linear-gradient(#79bc64, #578843);
+    text-decoration: none;
+}
+
+/* ------------------------------footer----------------------------- */
+.main-footer{
+    background-color: #fff;
+    padding-top: 30px;
+}
+.main-footer .footer{
+    width: 1000px;
+    margin: auto;
+}
+.main-footer .footer .language, .main-footer .footer .apps{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-footer .footer .language ul, .main-footer .footer .apps ul{
+    list-style: none;
+    font-size: 12px;
+}
+.main-footer .footer .language ul li, .main-footer .footer .apps ul li{
+    float: left;
+    /* margin-left: 15px; */
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+.main-footer .footer .language ul li a, .main-footer .footer .apps ul li a{
+    text-decoration: none;
+    color: #385898;
+}
+.main-footer .footer hr{
+    margin-top: 10px;
+    color: #737373;
+    opacity: 0.5;
+}
+.main-footer .footer .language ul li a:hover, .main-footer .footer .apps ul li a:hover{
+    text-decoration: underline;
+    color: rgb(4, 4, 236);
+}
+.main-footer .footer-creadit{
+    font-size: 11px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-footer .footer .footer-creadit a{
+    text-decoration: none;
+    color: cadetblue;
+}
+.main-footer .footer .footer-creadit a:hover{
+    text-decoration: underline;
+    color: indigo;
+}

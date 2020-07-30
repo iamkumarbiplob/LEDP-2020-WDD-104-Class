@@ -7,13 +7,26 @@
     <title>Welcome to Number Checker</title>
     <link rel="icon" type="image/ico" href="../source/image/logo.ico">
     <link rel="stylesheet" href="../source/style/css/style.css">
+    <link rel="stylesheet" href="../source/style/css/preloader.css">
     <link rel="stylesheet" href="../source/bootstrap-4/css/bootstrap.min.css">
     <link rel="stylesheet" href="../source/fontawesome-5/css/all.min.css">
     <link rel="stylesheet" href="../source/fontawesome-5/css/fontawesome.min.css">
 
 </head>
 
-<body onload=display_ct();>
+<body onload="display_ct(); pre_loader_custom();" style="background-image: linear-gradient(to right, #b2ebf2, #b2ebd3);">
+    <div id="loader">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+    <div id="my_custom_div">
+
     <div class="container-fluid position-fixed zindex-tooltip text-center">
         <div class="date_time">
             <p>
@@ -79,9 +92,9 @@
     <footer id="footer" class="fixed-bottom bg-color-custom">
         <div class="container ">
             <div class="row pt-3">
-                <div class="col-md-3 text-white" style="font-weight: bold;">
+                <div class="col-md-3 text-white text-left" style="font-weight: bold;">
                     <h5>Trainer</h5>
-                    <h6>Md. Tasfiqul Islam Ony</h6>
+                    <h6>Md. Tasdikul Islam Ony</h6>
                     <h6>Class Name: WDD 104</h6>
                     <h6>Batch ID: L4RJWDD104</h6>
                 </div>
@@ -99,11 +112,13 @@
             </div>
         </div>
     </footer>
+</div>
 
     <script src="../source/style/js/main.js"></script>
     <script src="../source/fontawesome-5/js/all.min.js"></script>
     <script src="../source/fontawesome-5/js/fontawesome.min.js"></script>
     <script src="../source/jquery/jquery-3.5.0.min.js"></script>
+    <script src="../source/popper/popper.min.js"></script>
     <script src="../source/bootstrap-4/js/bootstrap.min.js"></script>
 </body>
 

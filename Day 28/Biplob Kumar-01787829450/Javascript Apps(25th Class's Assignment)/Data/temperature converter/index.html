@@ -13,7 +13,18 @@
     <!-- </script> -->
 </head>
 
-<body onload=display_ct();>
+<body onload="display_ct(); pre_loader_custom();" style="background-image: linear-gradient(to right, #b2ebf2, #b2ebd3);">
+    <div id="loader">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+    <div id="my_custom_div">
     <div class="container-fluid position-fixed zindex-tooltip text-center">
         <div class="date_time">
             <p>
@@ -63,10 +74,10 @@
                     </div>
                     <div class="modal-body">
                         <h3>
-                            <span id="celcius"></span>
+                            <span id="Output1"></span>
                         </h3>
                         <h3>
-                            <span id="fahrenheight"></span>
+                            <span id="Output2"></span>
                         </h3>
                     </div>
                     <div class="modal-footer">
@@ -100,7 +111,7 @@
             </div>
         </div>
     </footer>
-
+</div>
 
     <script src="../source/style/js/main.js"></script> <!-- -->
     <script src="../source/jquery/jquery-3.5.0.min.js"></script>

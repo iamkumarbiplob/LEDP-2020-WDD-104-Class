@@ -6,95 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="icon" type="image/ico" href="./source/image/logo.ico">
+    <link rel="stylesheet" href="./source/style/css/preloader.css">
     <link rel="stylesheet" href="./source/style/css/style.css">
     <link rel="stylesheet" href="./source/bootstrap-4/css/bootstrap.min.css">
     <link rel="stylesheet" href="./source/fontawesome-5/css/all.min.css">
     <link rel="stylesheet" href="./source/style/css/util.css">
 </head>
 
-<body onload=display_ct();>
-
-    <img src="./source/image/LEDP/Digital Bangladesh & ICT.png" alt="Digital Bangladesh"
-        class="position-fixed index-image-left-top img-w-500-h-100 mt-5">
-    <img src="./source/image/LEDP/ledp & mujib 100.png" alt="Mujib 100"
-        class="position-fixed index-image-right-top img-w-500-h-100 mt-5">
-
-    <div class="container-fluid position-fixed zindex-tooltip text-center">
+<body onload="display_ct(); pre_loader_custom();" style="background-image: linear-gradient(to right, #b2ebd3, #b2ebf3);">
+    <div id="loader">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+    <div id="my_custom_div">
+        <div class="container-fluid position-fixed zindex-tooltip text-center">
         <div class="date_time">
             <p>
                 <span id='ct'></span>
             </p>
         </div>
-    </div> 
-    <div class="container">
-        <div class="d-flex fs-80" style="height: 100vh;">
-            <div class="row my-auto mx-auto">
-                <div class="col-md-12 text-center">
-                    <div class="row">
-                        <div class="col-md-4" data-toggle="tooltip" data-placement="bottom" title="Simple calculator">
-                            <a href="./calculator/" class="text-decoration-none" style="color: rgb(253, 0, 211);">
-                                <i class="fas fa-calculator"></i>
-                            </a>
-                        </div>
-                        <div class="col-md-4" data-toggle="tooltip" data-placement="bottom"
-                            title="temperature Converter">
-                            <a href="./temperature converter/" class="text-decoration-none"
-                                style="color: rgb(253, 0, 211);">
-                                <i class="fas fa-temperature-high"></i>
-                            </a>
-                        </div>
-                        <div class="col-md-4" data-toggle="tooltip" data-placement="bottom" title="Vowel Consonant checker">
-                            <a href="./letter checker/" class="text-decoration-none"  style="color: rgb(253, 0, 211);">
-                                <i class="fas fa-sort-alpha-down"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 text-center">
-                    <div class="row">
-                        <div class="col-md-4" data-toggle="tooltip" data-placement="top" title="Gread Converter">
-                            <a href="./grad/" class="text-decoration-none" style="color: rgb(253, 0, 211);">
-                                <i class="fas fa-graduation-cap"></i>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="" class="text-decoration-none">
-                                <i class="fab fa-hackerrank"></i>
-                            </a>
-                        </div>
-                        <div class="col-md-4" data-toggle="tooltip" data-placement="top" title="Odd Even Checker">
-                            <a href="./odd-even/" class="text-decoration-none" style="color: rgb(253, 0, 211);">
-                                <i class="fas fa-sort-numeric-down"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <footer id="footer" class="fixed-bottom bg-color-custom">
-        <div class="container ">
-            <div class="row pt-3">
-                <div class="col-md-4 text-white" style="font-weight: bold;">
-                    <h5>Trainer</h5>
-                    <h6>Md. Tasdikul Islam Ony</h6>
-                    <h6>Class Name: WDD 104</h6>
-                    <h6>Batch ID: L4RJWDD104</h6>
-                </div>
-                <div class="col-md-4 py-3">
-                    <img src="./source/image/LEDP/Mubinltd.png" alt="Mubin Limited"
-                        class="img-w-200-h-100 mx-auto d-block">
-                </div>
-                <div class="col-md-4 text-white" style="font-weight: bold; text-align: right;">
-                    <h5>Developed By</h5>
-                    <h6>Biplob Kumar</h6>
-                    <h6>Mobile: +8801787-829450</h6>
-                    <h6>Class Name: WDD 104</h6>
-                    <h6>Batch ID: L4RJWDD104</h6>
+        <img src="./source/image/LEDP/Digital Bangladesh & ICT.png" alt="Digital Bangladesh"
+            class="position-fixed index-image-left-top img-w-500-h-100 mt-5">
+        <img src="./source/image/LEDP/ledp & mujib 100.png" alt="Mujib 100"
+            class="position-fixed index-image-right-top img-w-500-h-100 mt-5">
+
+
+        <div class="container">
+            <div class="d-flex fs-80" style="height: 100vh;">
+                <div class="row my-auto mx-auto">
+                    <div class="col-md-12 text-center">
+                        <div class="row">
+                            <div class="col-md-4" data-toggle="tooltip" data-placement="bottom"
+                                title="Simple calculator">
+                                <a href="./calculator/" class="text-decoration-none" style="color: rgb(253, 0, 211);">
+                                    <i class="fas fa-calculator"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-4" data-toggle="tooltip" data-placement="bottom"
+                                title="temperature Converter">
+                                <a href="./temperature converter/" class="text-decoration-none"
+                                    style="color: rgb(253, 0, 211);">
+                                    <i class="fas fa-temperature-high"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-4" data-toggle="tooltip" data-placement="bottom"
+                                title="Vowel Consonant checker">
+                                <a href="./letter checker/" class="text-decoration-none"
+                                    style="color: rgb(253, 0, 211);">
+                                    <i class="fas fa-sort-alpha-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="row">
+                            <div class="col-md-4" data-toggle="tooltip" data-placement="top" title="Gread Converter">
+                                <a href="./grad/" class="text-decoration-none" style="color: rgb(253, 0, 211);">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-4" data-toggle="tooltip" data-placement="top"
+                                title="Number to Word Converter">
+                                <a href="./numbertoword/" class="text-decoration-none" style="color: rgb(253, 0, 211);">
+                                    <i class="fab fa-hackerrank"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-4" data-toggle="tooltip" data-placement="top" title="Odd Even Checker">
+                                <a href="./odd-even/" class="text-decoration-none" style="color: rgb(253, 0, 211);">
+                                    <i class="fas fa-sort-numeric-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <footer id="footer" class="fixed-bottom bg-color-custom">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-md-4 text-white text-left" style="font-weight: bold;">
+                        <h5>Trainer</h5>
+                        <h6>Md. Tasdikul Islam Ony</h6>
+                        <h6>Class Name: WDD 104</h6>
+                        <h6>Batch ID: L4RJWDD104</h6>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <img src="./source/image/LEDP/Mubinltd.png" alt="Mubin Limited"
+                            class="img-w-200-h-100 mx-auto d-block">
+                    </div>
+                    <div class="col-md-4 text-white text-right" style="font-weight: bold;">
+                        <h5>Developed By</h5>
+                        <h6>Biplob Kumar</h6>
+                        <h6>Mobile: +8801787-829450</h6>
+                        <h6>Class Name: WDD 104</h6>
+                        <h6>Batch ID: L4RJWDD104</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="./source/style/js/main.js"></script>
     <script src="./source/fontawesome-5/js/all.min.js"></script>

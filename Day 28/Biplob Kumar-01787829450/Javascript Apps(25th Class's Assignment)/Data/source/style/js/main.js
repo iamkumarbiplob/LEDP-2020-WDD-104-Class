@@ -1,3 +1,15 @@
+// ------------------------------------Preloader -----------------------
+var myVar;
+
+function pre_loader_custom() {
+    myVar = setTimeout(showPage_main_div, 3000);
+}
+
+function showPage_main_div() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("my_custom_div").style.display = "block";
+}
+
 // ---------------------------------index page loading--------------------------------
 (function () {
     'use strict';
@@ -86,8 +98,8 @@ function converttof_f() {
     // $('#fahrenheight').addClass('text-danger');
     // $('#celcius').text(celcious+" °C");
     // $('#celcius').addClass('text-danger');
-    $('#celcius').text("In Celcius: " + celcious + " °C");
-    $('#fahrenheight').text("In Fahrenheight: " + fahrenheight + " °F");
+    $('#Output1').text("In Celcius: " + celcious + " °C");
+    $('#Output2').text("In Fahrenheight: " + fahrenheight + " °F");
 }
 function converttof_c() {
     $('#title_modal').text("Fahrenheight to Celcious");
@@ -97,9 +109,9 @@ function converttof_c() {
     var celcious = (fahrenheight - 32) * (5 / 9);
     celcious = Math.round(celcious * 100) / 100;
 
-    $('#fahrenheight').text("In Fahrenheight: " + fahrenheight + " °F");
+    $('#Output1').text("In Fahrenheight: " + fahrenheight + " °F");
     // $('#fahrenheight').addClass('text-danger');
-    $('#celcius').text("In Celcius: " + celcious + " °C");
+    $('#Output2').text("In Celcius: " + celcious + " °C");
     // $('#celcius').addClass('text-danger');
 }
 
@@ -120,41 +132,57 @@ function convertgpa() {
         gpa = "A+";
         point = "5.00";
         alert("Hurray, You got GPA 5.00");
+        $('#output1').text("Hey, " + name);
+        $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
     }
     else if (marks >= 70 && marks <= 79) {
         gpa = "A";
-        point = "4.00";
+        point = "4.00";    
+        $('#output1').text("Hey, " + name);
+        $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
     }
     else if (marks >= 60 && marks <= 69) {
         gpa = "A-";
         point = "3.5";
+        $('#output1').text("Hey, " + name);
+        $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
     }
     else if (marks >= 50 && marks <= 59) {
         gpa = "B";
         point = "3.00";
+        $('#output1').text("Hey, " + name);
+        $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
     }
     else if (marks >= 40 && marks <= 49) {
         gpa = "C";
-        point = "2.00"
+        point = "2.00";
+        $('#output1').text("Hey, " + name);
+        $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
     }
     else if (marks >= 33 && marks <= 39) {
         gpa = "D";
-        point = "1.00"
+        point = "1.00";
+        $('#output1').text("Hey, " + name);
+        $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
     }
     else if (marks >= 0 && marks <= 32) {
         gpa = "F";
         point = "0.00";
         alert("Sorry, You are Fail");
+        $('#output1').text("Hey, " + name);
+        $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
     }
     else if (marks > 100 || marks < 0) {
         alert_pop = "You Enter The marks more then or less then 100.";
+        $('#output2').text(alert_pop);
     }
     else {
         alert_pop = "Sorry, Somthing is Wrong";
+        $('#output2').text(alert_pop);
     }
 
-    $('#output1').text("Hey, " + name);
-    $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
+    // $('#output1').text("Hey, " + name);
+    // $('#output2').text("You Got GPA " + point + " (" + gpa + ") out of 5.00");
 }
 
 
@@ -228,3 +256,69 @@ function check_odd_even(){
 
 
 }
+
+
+
+// ----------------------------------Speel Checker-----------------------------------------
+
+
+// -------------------------------Number to word---------------------
+       // actual  conversion code starts here
+
+       var ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+       var tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+       var teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen',
+           'nineteen'
+       ]; 
+
+       function convert_millions(num) {
+           if (num >= 1000000) {
+               return convert_millions(Math.floor(num / 1000000)) + " million " + convert_thousands(num % 1000000);
+           } else {
+               return convert_thousands(num);
+           }
+       }
+
+       function convert_thousands(num) {
+           if (num >= 1000) {
+               return convert_hundreds(Math.floor(num / 1000)) + " thousand " + convert_hundreds(num % 1000);
+           } else {
+               return convert_hundreds(num);
+           }
+       }
+
+       function convert_hundreds(num) {
+           if (num > 99) {
+               return ones[Math.floor(num / 100)] + " hundred " + convert_tens(num % 100);
+           } else {
+               return convert_tens(num);
+           }
+       }
+
+       function convert_tens(num) {
+           if (num < 10) return ones[num];
+           else if (num >= 10 && num < 20) return teens[num - 10];
+           else {
+               return tens[Math.floor(num / 10)] + " " + ones[num % 10];
+           }
+       }
+
+       function convert(num) {
+           if (num == 0) return "zero";
+           else return convert_millions(num);
+       }
+
+
+
+       function convert_word(){
+           var cases = converter_form_word.number.value;
+           var word_case=convert(cases);
+           $('#output1').text("You Enter: "+cases);
+           $('#output2').text("In word: "+word_case);
+            //  for (var i = 0; i < cases.length; i++) {
+
+            // //    console.log(cases[i] + ": " + convert(cases[i]));
+
+            //  }
+        //    console.log(convert(cases));
+       }

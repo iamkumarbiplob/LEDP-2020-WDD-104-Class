@@ -2,18 +2,10 @@ body {
     margin: 0;
     padding: 0;
     outline: 0;
+    background-image: linear-gradient(to right, #b2ebf2, #b2ebd3);
 }
-
-@media print {
-    body {
-        width: 595px;
-        height: 842px;
-    }
-}
-
-@page {
-    size: A4;
-    margin: 10%;
+.breadcrumb{
+    background-image: linear-gradient(to right, #b2ebf2, #b2ebd3);
 }
 
 .img-w-500-h-100 {

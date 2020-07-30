@@ -23,6 +23,14 @@
 })();
 
 // ----------------------------------------login page------------------------------------------
+function show_password() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 function login_here() {
     var uname = login_form.uname.value;
     var password = login_form.pass.value;
@@ -62,8 +70,6 @@ function display_ct() {
 
     document.getElementById('ct').innerHTML = d;
     // console.log(d);
-
-
 }
 
 

@@ -12,15 +12,18 @@
 </head>
 
 <body>
-    <img src="./source/image/LEDP/Digital Bangladesh & ICT.png" alt="Digital Bangladesh" class="ml-4 position-fixed index-image-left-top img-w-500-h-100">
-    <img src="./source/image/LEDP/ledp & mujib 100.png" alt="LEDP & Mujib100" class="position-fixed index-image-right-top img-w-500-h-100">
-    <img src="./source/image/LEDP/Mubinltd.png" alt="Mubin Limited" class="position-fixed index-image-bottom-right img-w-200-h-100">
+    <img src="./source/image/LEDP/Digital Bangladesh & ICT.png" alt="Digital Bangladesh"
+        class="ml-4 position-fixed index-image-left-top img-w-500-h-100">
+    <img src="./source/image/LEDP/ledp & mujib 100.png" alt="LEDP & Mujib100"
+        class="position-fixed index-image-right-top img-w-500-h-100">
+    <img src="./source/image/LEDP/Mubinltd.png" alt="Mubin Limited"
+        class="position-fixed index-image-bottom-right img-w-200-h-100">
     <img src="./source/image/main-logo.png" alt="" class="position-fixed index-image-bottom-left img-w-200-h-200">
-    
+
     <div class="container-fluid">
         <img src="./source/image/wave.png" alt="Background" class="image-background position-fixed">
     </div>
-    <div class="container"> 
+    <div class="container">
         <div class="row">
             <div class="col-md-5"></div>
             <div class="col-md-7">
@@ -29,16 +32,25 @@
                         <form name="login_form" class="w-100" autocomplete="off">
                             <div class="form-group row">
                                 <input type="text" class="form-control form-control-lg" name="uname"
-                                    placeholder="Username">
+                                    placeholder="Enter Username">
                             </div>
                             <div class="form-group row">
-                                <input type="password" class="form-control form-control-lg" name="pass"
-                                    placeholder="Password">
+                                <input type="password" class="form-control form-control-lg" name="pass" id="password"
+                                    placeholder="Enter Password" data-toggle="password">
                             </div>
+                            <div class="form-group">
+                                <div class="form-check" onclick="show_password()">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label">
+                                    Show Password
+                                  </label>
+                                </div>
+                              </div>
                             <div class="form-group">
                                 <p id="wrong" class="text-danger"></p>
                             </div>
-                            <button type="button" class="btn btn-primary float-right" onclick="login_here()">Login</button>
+                            <button type="button" class="btn btn-primary float-right"
+                                onclick="login_here()">Login</button>
                         </form>
                     </div>
                 </div>

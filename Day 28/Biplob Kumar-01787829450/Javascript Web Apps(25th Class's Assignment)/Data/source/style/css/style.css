@@ -4,8 +4,111 @@ body {
     outline: 0;
     background-image: linear-gradient(to right, #b2ebf2, #b2ebd3);
 }
-.breadcrumb{
+
+.breadcrumb {
     background-image: linear-gradient(to right, #b2ebf2, #b2ebd3);
+}
+
+.effect-custom {
+    color: #fd00d3;
+}
+
+.effect-custom:hover {
+    color: #1D8C45;
+    animation-name: example;
+    animation-duration: 1.3s;
+}
+
+@keyframes example {
+    from {
+        color: #fd00d3;
+    }
+
+    to {
+        color: #1D8C45;
+    }
+}
+
+.w3-animate-top {
+    position: relative;
+    animation: animatetop 0.9s;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-left {
+    position: relative;
+    animation: animateleft 0.9s;
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-right {
+    position: relative;
+    animation: animateright 0.9s;
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.9s;
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-zoom {
+    animation: animatezoom 0.9s;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .img-w-500-h-100 {

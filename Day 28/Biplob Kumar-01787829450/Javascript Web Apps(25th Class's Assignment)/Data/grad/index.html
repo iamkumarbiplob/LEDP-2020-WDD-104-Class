@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to greading System</title>
     <link rel="icon" type="image/ico" href="../source/image/logo.ico">
-    <link rel="stylesheet" href="../source/style/css/style.css">
-    <link rel="stylesheet" href="../source/style/css/preloader.css">
-    <link rel="stylesheet" href="../source/bootstrap-4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../source/fontawesome-5/css/all.min.css">
-    <link rel="stylesheet" href="../source/fontawesome-5/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../source/bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../source/fontawesome-5/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../source/fontawesome-5/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../source/style/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../source/style/css/preloader.css">
 
 </head>
 
-<body onload="display_ct(); pre_loader_custom();" style="background-image: linear-gradient(to right, #b2ebf2, #b2ebd3);">
+<body onload="display_ct(); pre_loader_custom();">
     <div id="loader">
         <div class="loader">
             <div class="loader__bar"></div>
@@ -25,7 +25,7 @@
             <div class="loader__ball"></div>
         </div>
     </div>
-    <div id="my_custom_div">
+    <div id="my_custom_div" class="w3-animate-left">
         <div class="container-fluid position-fixed zindex-tooltip text-center">
             <div class="date_time">
                 <p>
@@ -36,7 +36,7 @@
 
         <div class="container pt-5 d-print-none">
             <nav aria-label="breadcrumb d-print-none">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb" style="background-image: linear-gradient(to right, #b2ebd3, #b2ebf2);">
                     <li class="breadcrumb-item"><a href="../dashboard.html">Dashboard</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Greading System</li>
                 </ol>
